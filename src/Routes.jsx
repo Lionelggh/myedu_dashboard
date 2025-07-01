@@ -6,6 +6,7 @@ import ErrorBoundary from "components/ErrorBoundary";
 import Dashboard from "pages/dashboard";
 import TeachersManagement from "pages/teachers-management";
 import StudentsManagement from "pages/students-management";
+import AddNewStudent from "pages/add-new-student";
 import NotFound from "pages/NotFound";
 
 const Routes = () => {
@@ -19,6 +20,7 @@ const Routes = () => {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/teachers-management" element={<TeachersManagement />} />
         <Route path="/students-management" element={<StudentsManagement />} />
+        <Route path="/add-new-student" element={<AddNewStudent />} />
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>
       </ErrorBoundary>
